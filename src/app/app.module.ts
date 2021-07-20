@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 /* ---------- Modules ---------- */
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 import { LayoutModule } from './components/layout/layout.module';
 
 /* ---------- Components ---------- */
@@ -18,6 +19,7 @@ import { ErrorsComponent } from './components/errors/errors.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     LayoutModule
   ],
   providers: [],

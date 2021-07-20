@@ -1,11 +1,18 @@
-<!---------- Navbar start ---------->
-<app-sidebar></app-sidebar>
-<!---------- Navbar end ---------->
+<div class="app">
+  <aside id="sidebar" [className]="toggle? 'none': 'active'">
+    <!---------- Navbar start ---------->
+    <app-sidebar></app-sidebar>
+    <!---------- Navbar end ---------->
+  </aside>
+  
+  <section class="section">
+    <!---------- Button start ---------->
+    <button (click)="onChangeClass()" class="toggle" type="button"><img src="assets/img/menu.svg" ></button>
+    <!---------- Button end ---------->
 
-<!---------- Router start ---------->
-<router-outlet></router-outlet>
-<!---------- Router end ---------->
-
-<!---------- Footer start ---------->
-<app-footer></app-footer>
-<!---------- Footer end ---------->
+    <!---------- Router start ---------->
+    <router-outlet></router-outlet>
+    <!---------- Router end ---------->
+  
+  </section>
+</div>

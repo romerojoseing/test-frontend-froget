@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BaseComponent implements OnInit {
 
+  public toggle: boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onChangeClass(): void{
+    this.toggle = !this.toggle
   }
 
 }

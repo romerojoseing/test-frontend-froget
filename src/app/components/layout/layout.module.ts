@@ -8,13 +8,11 @@ import { RouterModule } from '@angular/router';
 /* ---------- Components ---------- */
 import { BaseComponent } from './base/base.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     BaseComponent, 
-    SidebarComponent, 
-    FooterComponent
+    SidebarComponent
   ],
   imports: [
     CommonModule,

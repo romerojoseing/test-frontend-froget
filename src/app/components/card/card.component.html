@@ -1,0 +1,15 @@
+<div class="cards" *ngIf="data!=null">
+  <div class="card" *ngFor="let item of data.results">
+    <h3 class="card-title">{{item.name}}</h3>
+    <p class="card-sub">Text Secondary</p>
+    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti officia aspernatur pariatur nobis quisquam voluptate asperiores !</p>
+    <div class="card-buttons">
+      <button class="card-button ripple">Action 1</button>
+      <button class="card-button ripple">Action 2</button>
+    </div>
+    
+  </div>
+
+  
+</div>
+<div class="lds-ripple" *ngIf="data==null"><div></div><div></div></div>

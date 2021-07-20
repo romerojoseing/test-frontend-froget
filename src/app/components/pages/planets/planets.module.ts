@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 
 /* ---------- Components ---------- */
+import { SharedAdminModule } from 'src/app/shared/shared-admin.module';
 import { PlanetsComponent } from './planets.component';
 
 const routes: Routes = [
@@ -17,7 +18,8 @@ const routes: Routes = [
   declarations: [PlanetsComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    SharedAdminModule
   ]
 })
 export class PlanetsModule { }
